@@ -1,0 +1,25 @@
+PODS:
+  - GRDB.swift (6.8.0):
+    - GRDB.swift/standard (= 6.8.0)
+  - GRDB.swift/standard (6.8.0)
+  - RedCrownedCrane (1.0.0)
+
+DEPENDENCIES:
+  - GRDB.swift (~> 6.8.0)
+  - RedCrownedCrane (from `../RedCrownedCrane.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - GRDB.swift
+
+EXTERNAL SOURCES:
+  RedCrownedCrane:
+    :path: "../RedCrownedCrane.podspec"
+
+SPEC CHECKSUMS:
+  GRDB.swift: 193f8cc35e4a04fa259e3b0f541e86e1f6446a7e
+  RedCrownedCrane: bc2e2285622d8d2ac3f0875bf6a93ad2d8d32e91
+
+PODFILE CHECKSUM: 648656c3896075e8f59925568b9f6a15a209848b
+
+COCOAPODS: 1.11.3

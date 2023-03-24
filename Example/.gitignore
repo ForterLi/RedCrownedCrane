@@ -1,0 +1,50 @@
+
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+xcuserdata/
+Pods/
+.DS_Store
+*/.DS_Store
+
+# fastlane
+build/
+fastlane/report.xml
+fastlane/screenshots/
+_floatsignTemp/
+NvStreamingSdkCore.framework/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+#
+Pods/
+BuildBundle/
+*.pyc
+
+# Carthage/
+auto_build_cache_copy_product.rb
+auto_build_cache_copy_product_log.txt
+auto_build_cache_temp.txt
+EFPAConfig.json
+EFPADiagram/data.json
+EFPADiagram/graph_circular.html
+EFPADiagram/graph_force.html
+EFPADiagram/index.html
+EFPADiagram/setting.json
+EFPADiagram/css/style.css
+EFPADiagram/js/dataTool.js
+EFPADiagram/js/echarts.min.js
+EFPADiagram/js/jquery.min.js
+EFPADiagram/js/xml2json.min.js
