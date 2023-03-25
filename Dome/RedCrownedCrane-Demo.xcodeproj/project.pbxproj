@@ -11,27 +11,17 @@
 		E91C9A4829CDEF0B001F055F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91C9A4329CDEF0B001F055F /* Assets.xcassets */; };
 		E91C9A4929CDEF0B001F055F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91C9A4529CDEF0B001F055F /* Preview Assets.xcassets */; };
 		E91C9A4A29CDEF0B001F055F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A4629CDEF0B001F055F /* ContentView.swift */; };
-		E91C9A5229CDF0D5001F055F /* Kingfisher_macOS_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A5129CDF0D5001F055F /* Kingfisher_macOS_DemoApp.swift */; };
-		E91C9A5429CDF0D5001F055F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A5329CDF0D5001F055F /* ContentView.swift */; };
-		E91C9A5629CDF0D7001F055F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91C9A5529CDF0D7001F055F /* Assets.xcassets */; };
-		E91C9A5929CDF0D7001F055F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91C9A5829CDF0D7001F055F /* Preview Assets.xcassets */; };
 		E91C9A6429CDF684001F055F /* DemoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A6329CDF684001F055F /* DemoItem.swift */; };
 		E91C9A6629CEBF07001F055F /* RedCrownedCrane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91C9A6529CEBF07001F055F /* RedCrownedCrane.framework */; };
 		E91C9A6729CEBF07001F055F /* RedCrownedCrane.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E91C9A6529CEBF07001F055F /* RedCrownedCrane.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E94D50C029CED9E100D68CD8 /* RedCrownedCrane_macOS_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D50BF29CED9E100D68CD8 /* RedCrownedCrane_macOS_DemoApp.swift */; };
+		E94D50C229CED9E100D68CD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D50C129CED9E100D68CD8 /* ContentView.swift */; };
+		E94D50C429CED9E600D68CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94D50C329CED9E600D68CD8 /* Assets.xcassets */; };
+		E94D50C729CED9E600D68CD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94D50C629CED9E600D68CD8 /* Preview Assets.xcassets */; };
 		F5C9F17E3FC7DFC3F0203697 /* Pods_RedCrownedCrane_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA711F06106E3B70254713DD /* Pods_RedCrownedCrane_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E91C9A6229CDF27E001F055F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E91C9A6829CEBF07001F055F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,6 +31,16 @@
 				E91C9A6729CEBF07001F055F /* RedCrownedCrane.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E94D50B529CED91400D68CD8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -54,16 +54,21 @@
 		E91C9A4329CDEF0B001F055F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E91C9A4529CDEF0B001F055F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E91C9A4629CDEF0B001F055F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E91C9A4F29CDF0D5001F055F /* Kingfisher-macOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kingfisher-macOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E91C9A5129CDF0D5001F055F /* Kingfisher_macOS_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingfisher_macOS_DemoApp.swift; sourceTree = "<group>"; };
-		E91C9A5329CDF0D5001F055F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E91C9A5529CDF0D7001F055F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E91C9A5829CDF0D7001F055F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E91C9A5A29CDF0D7001F055F /* Kingfisher_macOS_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kingfisher_macOS_Demo.entitlements; sourceTree = "<group>"; };
 		E91C9A6329CDF684001F055F /* DemoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoItem.swift; sourceTree = "<group>"; };
 		E91C9A6529CEBF07001F055F /* RedCrownedCrane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedCrownedCrane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91C9A6929CEC219001F055F /* RedCrownedCrane-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RedCrownedCrane-Demo.entitlements"; sourceTree = "<group>"; };
 		E91C9A6A29CEC246001F055F /* RedCrownedCrane-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RedCrownedCrane-Demo-Info.plist"; sourceTree = "<group>"; };
+		E94D509F29CED91000D68CD8 /* RedCrownedCrane-Watch-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RedCrownedCrane-Watch-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E94D50A929CED91100D68CD8 /* RedCrownedCrane_Watch_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCrownedCrane_Watch_DemoApp.swift; sourceTree = "<group>"; };
+		E94D50AB29CED91100D68CD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E94D50AD29CED91400D68CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E94D50B029CED91400D68CD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E94D50BD29CED9E100D68CD8 /* RedCrownedCrane-macOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RedCrownedCrane-macOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E94D50BF29CED9E100D68CD8 /* RedCrownedCrane_macOS_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCrownedCrane_macOS_DemoApp.swift; sourceTree = "<group>"; };
+		E94D50C129CED9E100D68CD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E94D50C329CED9E600D68CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E94D50C629CED9E600D68CD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E94D50C829CED9E600D68CD8 /* RedCrownedCrane_macOS_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RedCrownedCrane_macOS_Demo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +81,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E91C9A4C29CDF0D5001F055F /* Frameworks */ = {
+		E94D50BA29CED9E100D68CD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -112,7 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				E91C9A2F29CDEE09001F055F /* RedCrownedCrane-Demo.app */,
-				E91C9A4F29CDF0D5001F055F /* Kingfisher-macOS-Demo.app */,
+				E94D509F29CED91000D68CD8 /* RedCrownedCrane-Watch-Demo.app */,
+				E94D50BD29CED9E100D68CD8 /* RedCrownedCrane-macOS-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,7 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				E91C9A4129CDEF0B001F055F /* RedCrownedCrane-Demo */,
-				E91C9A5029CDF0D5001F055F /* Kingfisher-macOS-Demo */,
+				E94D50BE29CED9E100D68CD8 /* RedCrownedCrane-macOS-Demo */,
+				E94D50A829CED91100D68CD8 /* RedCrownedCrane-Watch-Demo */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -146,26 +153,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E91C9A5029CDF0D5001F055F /* Kingfisher-macOS-Demo */ = {
-			isa = PBXGroup;
-			children = (
-				E91C9A5129CDF0D5001F055F /* Kingfisher_macOS_DemoApp.swift */,
-				E91C9A5329CDF0D5001F055F /* ContentView.swift */,
-				E91C9A5529CDF0D7001F055F /* Assets.xcassets */,
-				E91C9A5A29CDF0D7001F055F /* Kingfisher_macOS_Demo.entitlements */,
-				E91C9A5729CDF0D7001F055F /* Preview Content */,
-			);
-			path = "Kingfisher-macOS-Demo";
-			sourceTree = "<group>";
-		};
-		E91C9A5729CDF0D7001F055F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E91C9A5829CDF0D7001F055F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		E91C9A5E29CDF27E001F055F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +160,45 @@
 				DA711F06106E3B70254713DD /* Pods_RedCrownedCrane_Demo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E94D50A829CED91100D68CD8 /* RedCrownedCrane-Watch-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E94D50A929CED91100D68CD8 /* RedCrownedCrane_Watch_DemoApp.swift */,
+				E94D50AB29CED91100D68CD8 /* ContentView.swift */,
+				E94D50AD29CED91400D68CD8 /* Assets.xcassets */,
+				E94D50AF29CED91400D68CD8 /* Preview Content */,
+			);
+			path = "RedCrownedCrane-Watch-Demo";
+			sourceTree = "<group>";
+		};
+		E94D50AF29CED91400D68CD8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E94D50B029CED91400D68CD8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E94D50BE29CED9E100D68CD8 /* RedCrownedCrane-macOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E94D50BF29CED9E100D68CD8 /* RedCrownedCrane_macOS_DemoApp.swift */,
+				E94D50C129CED9E100D68CD8 /* ContentView.swift */,
+				E94D50C329CED9E600D68CD8 /* Assets.xcassets */,
+				E94D50C829CED9E600D68CD8 /* RedCrownedCrane_macOS_Demo.entitlements */,
+				E94D50C529CED9E600D68CD8 /* Preview Content */,
+			);
+			path = "RedCrownedCrane-macOS-Demo";
+			sourceTree = "<group>";
+		};
+		E94D50C529CED9E600D68CD8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E94D50C629CED9E600D68CD8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,22 +224,37 @@
 			productReference = E91C9A2F29CDEE09001F055F /* RedCrownedCrane-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E91C9A4E29CDF0D5001F055F /* Kingfisher-macOS-Demo */ = {
+		E94D509E29CED91000D68CD8 /* RedCrownedCrane-Watch-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E91C9A5B29CDF0D7001F055F /* Build configuration list for PBXNativeTarget "Kingfisher-macOS-Demo" */;
+			buildConfigurationList = E94D50B629CED91400D68CD8 /* Build configuration list for PBXNativeTarget "RedCrownedCrane-Watch-Demo" */;
 			buildPhases = (
-				E91C9A4B29CDF0D5001F055F /* Sources */,
-				E91C9A4C29CDF0D5001F055F /* Frameworks */,
-				E91C9A4D29CDF0D5001F055F /* Resources */,
-				E91C9A6229CDF27E001F055F /* Embed Frameworks */,
+				E94D509D29CED91000D68CD8 /* Resources */,
+				E94D50B529CED91400D68CD8 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Kingfisher-macOS-Demo";
-			productName = "Kingfisher-macOS-Demo";
-			productReference = E91C9A4F29CDF0D5001F055F /* Kingfisher-macOS-Demo.app */;
+			name = "RedCrownedCrane-Watch-Demo";
+			productName = "RedCrownedCrane-Watch-Demo";
+			productReference = E94D509F29CED91000D68CD8 /* RedCrownedCrane-Watch-Demo.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		E94D50BC29CED9E100D68CD8 /* RedCrownedCrane-macOS-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E94D50C929CED9E600D68CD8 /* Build configuration list for PBXNativeTarget "RedCrownedCrane-macOS-Demo" */;
+			buildPhases = (
+				E94D50B929CED9E100D68CD8 /* Sources */,
+				E94D50BA29CED9E100D68CD8 /* Frameworks */,
+				E94D50BB29CED9E100D68CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RedCrownedCrane-macOS-Demo";
+			productName = "RedCrownedCrane-macOS-Demo";
+			productReference = E94D50BD29CED9E100D68CD8 /* RedCrownedCrane-macOS-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +270,10 @@
 					E91C9A2E29CDEE09001F055F = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					E91C9A4E29CDF0D5001F055F = {
+					E94D509E29CED91000D68CD8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E94D50BC29CED9E100D68CD8 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -248,7 +292,8 @@
 			projectRoot = "";
 			targets = (
 				E91C9A2E29CDEE09001F055F /* RedCrownedCrane-Demo */,
-				E91C9A4E29CDF0D5001F055F /* Kingfisher-macOS-Demo */,
+				E94D509E29CED91000D68CD8 /* RedCrownedCrane-Watch-Demo */,
+				E94D50BC29CED9E100D68CD8 /* RedCrownedCrane-macOS-Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -263,12 +308,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E91C9A4D29CDF0D5001F055F /* Resources */ = {
+		E94D509D29CED91000D68CD8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91C9A5929CDF0D7001F055F /* Preview Assets.xcassets in Resources */,
-				E91C9A5629CDF0D7001F055F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E94D50BB29CED9E100D68CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E94D50C729CED9E600D68CD8 /* Preview Assets.xcassets in Resources */,
+				E94D50C429CED9E600D68CD8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,12 +379,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E91C9A4B29CDF0D5001F055F /* Sources */ = {
+		E94D50B929CED9E100D68CD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91C9A5429CDF0D5001F055F /* ContentView.swift in Sources */,
-				E91C9A5229CDF0D5001F055F /* Kingfisher_macOS_DemoApp.swift in Sources */,
+				E94D50C229CED9E100D68CD8 /* ContentView.swift in Sources */,
+				E94D50C029CED9E100D68CD8 /* RedCrownedCrane_macOS_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,16 +577,46 @@
 			};
 			name = Release;
 		};
-		E91C9A5C29CDF0D7001F055F /* Debug */ = {
+		E94D50B729CED91400D68CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D24A64J5VZ;
+				INFOPLIST_KEY_CFBundleDisplayName = "RedCrownedCrane-Watch-Demo";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.forter.RedCrownedCrane-Watch-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E94D50B829CED91400D68CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D24A64J5VZ;
+				INFOPLIST_KEY_CFBundleDisplayName = "RedCrownedCrane-Watch-Demo";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.forter.RedCrownedCrane-Watch-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E94D50CA29CED9E600D68CD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Kingfisher-macOS-Demo/Kingfisher_macOS_Demo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "RedCrownedCrane-macOS-Demo/RedCrownedCrane_macOS_Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Kingfisher-macOS-Demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RedCrownedCrane-macOS-Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = D24A64J5VZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -546,7 +628,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.forter.Kingfisher-macOS-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.forter.RedCrownedCrane-macOS-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -554,16 +636,16 @@
 			};
 			name = Debug;
 		};
-		E91C9A5D29CDF0D7001F055F /* Release */ = {
+		E94D50CB29CED9E600D68CD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Kingfisher-macOS-Demo/Kingfisher_macOS_Demo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "RedCrownedCrane-macOS-Demo/RedCrownedCrane_macOS_Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Kingfisher-macOS-Demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RedCrownedCrane-macOS-Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = D24A64J5VZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -575,7 +657,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.forter.Kingfisher-macOS-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.forter.RedCrownedCrane-macOS-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -604,11 +686,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E91C9A5B29CDF0D7001F055F /* Build configuration list for PBXNativeTarget "Kingfisher-macOS-Demo" */ = {
+		E94D50B629CED91400D68CD8 /* Build configuration list for PBXNativeTarget "RedCrownedCrane-Watch-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E91C9A5C29CDF0D7001F055F /* Debug */,
-				E91C9A5D29CDF0D7001F055F /* Release */,
+				E94D50B729CED91400D68CD8 /* Debug */,
+				E94D50B829CED91400D68CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E94D50C929CED9E600D68CD8 /* Build configuration list for PBXNativeTarget "RedCrownedCrane-macOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E94D50CA29CED9E600D68CD8 /* Debug */,
+				E94D50CB29CED9E600D68CD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
