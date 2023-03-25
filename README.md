@@ -15,3 +15,6 @@ target 'MyApp' do
   pod 'RedCrownedCrane', '~> 1.0.0'
 end
 ```
+### License
+
+RedCrownedCrane is released under the MIT license. See LICENSE for details.
