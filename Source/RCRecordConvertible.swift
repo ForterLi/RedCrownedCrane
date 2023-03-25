@@ -39,7 +39,7 @@ extension RCRecordConvertible  {
     }
     
     public static var recordType: String {
-        return className
+        return RCCommons.classNameFromClass(Self.self)
     }
     
     public static var zoneID: CKRecordZone.ID {
@@ -62,20 +62,5 @@ extension RCRecordConvertible  {
         assembleRecord(record: r)
         return r
     }
-    
-    internal static var className: String {
-        get {
-            var className = NSStringFromClass(self)
-            if RCCommons.isSwiftClass(name: className) {
-                className = RCCommons.demangleClassName(name: className)!
-            }
-            return className
-        }
-    }
-    
-    internal var className: String {
-        get {
-            Self.className
-        }
-    }
+
 }

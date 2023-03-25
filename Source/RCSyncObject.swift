@@ -33,26 +33,26 @@ extension RCSyncObject: RCSyncAble {
     
     public var zoneChangesToken: CKServerChangeToken? {
         get {
-            guard let tokenData = UserDefaults.standard.object(forKey: T.className + RedCrownedCraneKey.zoneChangesTokenKey.value) as? Data else { return nil }
+            guard let tokenData = UserDefaults.standard.object(forKey: T.recordType + RedCrownedCraneKey.zoneChangesTokenKey.value) as? Data else { return nil }
             return NSKeyedUnarchiver.unarchiveObject(with: tokenData) as? CKServerChangeToken
         }
         set {
             guard let n = newValue else {
-                UserDefaults.standard.removeObject(forKey: T.className + RedCrownedCraneKey.zoneChangesTokenKey.value)
+                UserDefaults.standard.removeObject(forKey: T.recordType + RedCrownedCraneKey.zoneChangesTokenKey.value)
                 return
             }
             let data = NSKeyedArchiver.archivedData(withRootObject: n)
-            UserDefaults.standard.set(data, forKey: T.className + RedCrownedCraneKey.zoneChangesTokenKey.value)
+            UserDefaults.standard.set(data, forKey: T.recordType + RedCrownedCraneKey.zoneChangesTokenKey.value)
         }
     }
 
     public var isCustomZoneCreated: Bool {
         get {
-            guard let flag = UserDefaults.standard.object(forKey: T.className + RedCrownedCraneKey.hasCustomZoneCreatedKey.value) as? Bool else { return false }
+            guard let flag = UserDefaults.standard.object(forKey: T.recordType + RedCrownedCraneKey.hasCustomZoneCreatedKey.value) as? Bool else { return false }
             return flag
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: T.className + RedCrownedCraneKey.hasCustomZoneCreatedKey.value)
+            UserDefaults.standard.set(newValue, forKey: T.recordType + RedCrownedCraneKey.hasCustomZoneCreatedKey.value)
         }
     }
     

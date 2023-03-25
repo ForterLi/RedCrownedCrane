@@ -10,14 +10,12 @@ import Foundation
 
 class RCCommons {
     
-    static var className: String {
-        get {
-            var className = NSStringFromClass(self)
-            if self.isSwiftClass(name: className) {
-                className = self.demangleClassName(name: className)!
-            }
-            return className
+    static func classNameFromClass(_ aClass: AnyClass) -> String {
+        var className = NSStringFromClass(aClass)
+        if self.isSwiftClass(name: className) {
+            className = self.demangleClassName(name: className)!
         }
+        return className
     }
 
     static func isSwiftClass(name className: String) -> Bool {
@@ -41,26 +39,3 @@ extension RawRepresentable where RawValue == String, Self: NotificationName {
         }
     }
 }
-
-
-
-// MARK: - Atomic Variable Support
-@propertyWrapper
-internal struct Atomic<Value> {
-    private let queue = DispatchQueue(label: "com.vadimbulavin.atomic")
-    private var value: Value
-
-    init(wrappedValue: Value) {
-        self.value = wrappedValue
-    }
-    
-    var wrappedValue: Value {
-        get {
-            return queue.sync { value }
-        }
-        set {
-            queue.sync { value = newValue }
-        }
-    }
-}
-
