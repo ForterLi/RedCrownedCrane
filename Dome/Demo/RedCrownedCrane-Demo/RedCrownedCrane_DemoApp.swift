@@ -1,17 +1,17 @@
 //
-//  AppDelegate.swift
-//  RedCrownedCrane
+//  RedCrownedCrane_DemoApp.swift
+//  RedCrownedCrane-Demo
 //
-//  Created by forterli on 2023/3/2.
+//  Created by forterli on 2023/3/24.
 //
 
-import UIKit
-import CloudKit
+import SwiftUI
 import GRDB
+import CloudKit
 import RedCrownedCrane
 
 
-let synaEngine = RCSynaEngine.init(objects: [TestItem.self], container: CKContainer(identifier: "iCloud.com.forter.dsdsd.CloudKit"))
+let synaEngine = RCSynaEngine.init(objects: [DemoItem.self], container: CKContainer(identifier: "iCloud.com.forter.dsdsd.CloudKit"))
 var dbQueue: DatabaseQueue = {
     let fileManager = FileManager()
     let folderURL = try! fileManager
@@ -32,19 +32,12 @@ var dbQueue: DatabaseQueue = {
 
 
 
-
-
-
-
-
-
-@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         application.registerForRemoteNotifications()
         try? dbQueue.write { db in
-            try db.create(table: "testItem") { t in
+            try db.create(table: "demoItem") { t in
                 t.primaryKey("identifiable", .text)
                 t.column("name", .text).notNull()
                 t.column("isDeleted", .boolean).notNull()
@@ -70,8 +63,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        synaEngine.application(application, didReceiveRemoteNotification: userInfo)
+        synaEngine.application(didReceiveRemoteNotification: userInfo)
         completionHandler(.newData)
     }
 }
+
+
+@main
+struct RedCrownedCrane_DemoApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+
 

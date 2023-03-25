@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E91C9A0429CDE7FE001F055F /* RedCrownedCrane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91C99FB29CDE7FD001F055F /* RedCrownedCrane.framework */; };
+		E91C9A0929CDE7FE001F055F /* RedCrownedCraneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A0829CDE7FE001F055F /* RedCrownedCraneTests.swift */; };
+		E91C9A1D29CDE97E001F055F /* RCErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A1429CDE97E001F055F /* RCErrorHandler.swift */; };
+		E91C9A1E29CDE97E001F055F /* RCSynaEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A1529CDE97E001F055F /* RCSynaEngine.swift */; };
+		E91C9A1F29CDE97F001F055F /* RCSyncObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A1629CDE97E001F055F /* RCSyncObject.swift */; };
+		E91C9A2029CDE97F001F055F /* RCPublicDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A1729CDE97E001F055F /* RCPublicDatabaseManager.swift */; };
+		E91C9A2129CDE97F001F055F /* RCPrivateDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A1829CDE97E001F055F /* RCPrivateDatabaseManager.swift */; };
+		E91C9A2229CDE97F001F055F /* RCRecordConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A1929CDE97E001F055F /* RCRecordConvertible.swift */; };
+		E91C9A2329CDE97F001F055F /* RCCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A1A29CDE97E001F055F /* RCCommons.swift */; };
+		E91C9A2429CDE97F001F055F /* RCSyncAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A1B29CDE97E001F055F /* RCSyncAble.swift */; };
+		E91C9A2529CDE97F001F055F /* RCDatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A1C29CDE97E001F055F /* RCDatabaseManagerProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E91C9A0529CDE7FE001F055F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E91C99F229CDE7FD001F055F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91C99FA29CDE7FD001F055F;
+			remoteInfo = RedCrownedCrane;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E91C99FB29CDE7FD001F055F /* RedCrownedCrane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RedCrownedCrane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91C9A0329CDE7FE001F055F /* RedCrownedCraneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedCrownedCraneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91C9A0829CDE7FE001F055F /* RedCrownedCraneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCrownedCraneTests.swift; sourceTree = "<group>"; };
+		E91C9A1429CDE97E001F055F /* RCErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCErrorHandler.swift; sourceTree = "<group>"; };
+		E91C9A1529CDE97E001F055F /* RCSynaEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCSynaEngine.swift; sourceTree = "<group>"; };
+		E91C9A1629CDE97E001F055F /* RCSyncObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCSyncObject.swift; sourceTree = "<group>"; };
+		E91C9A1729CDE97E001F055F /* RCPublicDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCPublicDatabaseManager.swift; sourceTree = "<group>"; };
+		E91C9A1829CDE97E001F055F /* RCPrivateDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCPrivateDatabaseManager.swift; sourceTree = "<group>"; };
+		E91C9A1929CDE97E001F055F /* RCRecordConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCRecordConvertible.swift; sourceTree = "<group>"; };
+		E91C9A1A29CDE97E001F055F /* RCCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCCommons.swift; sourceTree = "<group>"; };
+		E91C9A1B29CDE97E001F055F /* RCSyncAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCSyncAble.swift; sourceTree = "<group>"; };
+		E91C9A1C29CDE97E001F055F /* RCDatabaseManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCDatabaseManagerProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E91C99F829CDE7FD001F055F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91C9A0029CDE7FE001F055F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91C9A0429CDE7FE001F055F /* RedCrownedCrane.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E91C99F129CDE7FD001F055F = {
+			isa = PBXGroup;
+			children = (
+				E91C9A1329CDE97E001F055F /* Source */,
+				E91C9A0729CDE7FE001F055F /* RedCrownedCraneTests */,
+				E91C99FC29CDE7FD001F055F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E91C99FC29CDE7FD001F055F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E91C99FB29CDE7FD001F055F /* RedCrownedCrane.framework */,
+				E91C9A0329CDE7FE001F055F /* RedCrownedCraneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E91C9A0729CDE7FE001F055F /* RedCrownedCraneTests */ = {
+			isa = PBXGroup;
+			children = (
+				E91C9A0829CDE7FE001F055F /* RedCrownedCraneTests.swift */,
+			);
+			path = RedCrownedCraneTests;
+			sourceTree = "<group>";
+		};
+		E91C9A1329CDE97E001F055F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E91C9A1429CDE97E001F055F /* RCErrorHandler.swift */,
+				E91C9A1529CDE97E001F055F /* RCSynaEngine.swift */,
+				E91C9A1629CDE97E001F055F /* RCSyncObject.swift */,
+				E91C9A1729CDE97E001F055F /* RCPublicDatabaseManager.swift */,
+				E91C9A1829CDE97E001F055F /* RCPrivateDatabaseManager.swift */,
+				E91C9A1929CDE97E001F055F /* RCRecordConvertible.swift */,
+				E91C9A1A29CDE97E001F055F /* RCCommons.swift */,
+				E91C9A1B29CDE97E001F055F /* RCSyncAble.swift */,
+				E91C9A1C29CDE97E001F055F /* RCDatabaseManagerProtocol.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E91C99F629CDE7FD001F055F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E91C99FA29CDE7FD001F055F /* RedCrownedCrane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91C9A0D29CDE7FE001F055F /* Build configuration list for PBXNativeTarget "RedCrownedCrane" */;
+			buildPhases = (
+				E91C99F629CDE7FD001F055F /* Headers */,
+				E91C99F729CDE7FD001F055F /* Sources */,
+				E91C99F829CDE7FD001F055F /* Frameworks */,
+				E91C99F929CDE7FD001F055F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedCrownedCrane;
+			productName = RedCrownedCrane;
+			productReference = E91C99FB29CDE7FD001F055F /* RedCrownedCrane.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E91C9A0229CDE7FE001F055F /* RedCrownedCraneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91C9A1029CDE7FE001F055F /* Build configuration list for PBXNativeTarget "RedCrownedCraneTests" */;
+			buildPhases = (
+				E91C99FF29CDE7FE001F055F /* Sources */,
+				E91C9A0029CDE7FE001F055F /* Frameworks */,
+				E91C9A0129CDE7FE001F055F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E91C9A0629CDE7FE001F055F /* PBXTargetDependency */,
+			);
+			name = RedCrownedCraneTests;
+			productName = RedCrownedCraneTests;
+			productReference = E91C9A0329CDE7FE001F055F /* RedCrownedCraneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E91C99F229CDE7FD001F055F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E91C99FA29CDE7FD001F055F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E91C9A0229CDE7FE001F055F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = E91C99F529CDE7FD001F055F /* Build configuration list for PBXProject "RedCrownedCrane" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E91C99F129CDE7FD001F055F;
+			productRefGroup = E91C99F129CDE7FD001F055F;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E91C99FA29CDE7FD001F055F /* RedCrownedCrane */,
+				E91C9A0229CDE7FE001F055F /* RedCrownedCraneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E91C99F929CDE7FD001F055F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91C9A0129CDE7FE001F055F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E91C99F729CDE7FD001F055F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91C9A2129CDE97F001F055F /* RCPrivateDatabaseManager.swift in Sources */,
+				E91C9A2429CDE97F001F055F /* RCSyncAble.swift in Sources */,
+				E91C9A2029CDE97F001F055F /* RCPublicDatabaseManager.swift in Sources */,
+				E91C9A1D29CDE97E001F055F /* RCErrorHandler.swift in Sources */,
+				E91C9A2529CDE97F001F055F /* RCDatabaseManagerProtocol.swift in Sources */,
+				E91C9A1E29CDE97E001F055F /* RCSynaEngine.swift in Sources */,
+				E91C9A1F29CDE97F001F055F /* RCSyncObject.swift in Sources */,
+				E91C9A2229CDE97F001F055F /* RCRecordConvertible.swift in Sources */,
+				E91C9A2329CDE97F001F055F /* RCCommons.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91C99FF29CDE7FE001F055F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91C9A0929CDE7FE001F055F /* RedCrownedCraneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E91C9A0629CDE7FE001F055F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E91C99FA29CDE7FD001F055F /* RedCrownedCrane */;
+			targetProxy = E91C9A0529CDE7FE001F055F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E91C9A0B29CDE7FE001F055F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E91C9A0C29CDE7FE001F055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E91C9A0E29CDE7FE001F055F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D24A64J5VZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forter.RedCrownedCrane;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		E91C9A0F29CDE7FE001F055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D24A64J5VZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forter.RedCrownedCrane;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		E91C9A1129CDE7FE001F055F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D24A64J5VZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forter.RedCrownedCraneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E91C9A1229CDE7FE001F055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D24A64J5VZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forter.RedCrownedCraneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E91C99F529CDE7FD001F055F /* Build configuration list for PBXProject "RedCrownedCrane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91C9A0B29CDE7FE001F055F /* Debug */,
+				E91C9A0C29CDE7FE001F055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E91C9A0D29CDE7FE001F055F /* Build configuration list for PBXNativeTarget "RedCrownedCrane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91C9A0E29CDE7FE001F055F /* Debug */,
+				E91C9A0F29CDE7FE001F055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E91C9A1029CDE7FE001F055F /* Build configuration list for PBXNativeTarget "RedCrownedCraneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91C9A1129CDE7FE001F055F /* Debug */,
+				E91C9A1229CDE7FE001F055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E91C99F229CDE7FD001F055F /* Project object */;
+}

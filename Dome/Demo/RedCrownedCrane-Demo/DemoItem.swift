@@ -1,5 +1,5 @@
 //
-//  TestItem.swift
+//  DemoItem.swift
 //  RedCrownedCrane
 //
 //  Created by forterli on 2023/3/20.
@@ -10,8 +10,7 @@ import GRDB
 import CloudKit
 import RedCrownedCrane
 
-
-class TestItem: Codable, FetchableRecord, PersistableRecord, RCRecordConvertible {
+class DemoItem: Codable, FetchableRecord, PersistableRecord, RCRecordConvertible {
 
     var name: String = UUID().uuidString
     
@@ -32,7 +31,7 @@ class TestItem: Codable, FetchableRecord, PersistableRecord, RCRecordConvertible
     }
     
     static func parseFromRecord(record: CKRecord) -> RCRecordConvertible? {
-        let p = TestItem()
+        let p = DemoItem()
         p.identifiable = record.recordID.recordName
         p.name = record["name"] as! String
         p.isDeleted = record["isDeleted"] as! Bool
@@ -41,7 +40,7 @@ class TestItem: Codable, FetchableRecord, PersistableRecord, RCRecordConvertible
     }
     
     static func add(record: CKRecord) {
-        let fd = TestItem()
+        let fd = DemoItem()
         fd.identifiable = record.recordID.recordName
         fd.name = record["name"] as! String
         fd.isDeleted = record["isDeleted"] as! Bool
@@ -53,7 +52,7 @@ class TestItem: Codable, FetchableRecord, PersistableRecord, RCRecordConvertible
     
     static func delete(recordID: CKRecord.ID) {
         let _ = try? dbQueue.write({ db in
-            return try? TestItem.deleteOne(db, key: recordID.recordName)
+            return try? DemoItem.deleteOne(db, key: recordID.recordName)
         })
     }
     
@@ -63,14 +62,14 @@ class TestItem: Codable, FetchableRecord, PersistableRecord, RCRecordConvertible
     
     static func fetchAllObject() -> [RCRecordConvertible]? {
         return try? dbQueue.read { db in
-            let items = try TestItem.fetchAll(db)
+            let items = try DemoItem.fetchAll(db)
             return items
         }
     }
     
     static func queryObject(identifiable: String) -> RCRecordConvertible? {
         return try? dbQueue.read({ db in
-            return try? TestItem.fetchOne(db, key: identifiable)
+            return try? DemoItem.fetchOne(db, key: identifiable)
         })
     }
 

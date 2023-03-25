@@ -15,11 +15,13 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "11.0"
   s.ios.deployment_target = '11.0'
   s.osx.deployment_target = '10.13'
-  s.watchos.deployment_target = '4.0'
   s.tvos.deployment_target = '11.0'
+  s.watchos.deployment_target = '4.0'
 
   s.requires_arc = true
   s.source_files  = 'Source/*.{h,m,swift}'
+  s.framework = 'Foundation','UIKit'
+
    
 end
 

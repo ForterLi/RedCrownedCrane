@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E91C9A4729CDEF0B001F055F /* RedCrownedCrane_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A4229CDEF0B001F055F /* RedCrownedCrane_DemoApp.swift */; };
+		E91C9A4829CDEF0B001F055F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91C9A4329CDEF0B001F055F /* Assets.xcassets */; };
+		E91C9A4929CDEF0B001F055F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91C9A4529CDEF0B001F055F /* Preview Assets.xcassets */; };
+		E91C9A4A29CDEF0B001F055F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A4629CDEF0B001F055F /* ContentView.swift */; };
+		E91C9A5229CDF0D5001F055F /* Kingfisher_macOS_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A5129CDF0D5001F055F /* Kingfisher_macOS_DemoApp.swift */; };
+		E91C9A5429CDF0D5001F055F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A5329CDF0D5001F055F /* ContentView.swift */; };
+		E91C9A5629CDF0D7001F055F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91C9A5529CDF0D7001F055F /* Assets.xcassets */; };
+		E91C9A5929CDF0D7001F055F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91C9A5829CDF0D7001F055F /* Preview Assets.xcassets */; };
+		E91C9A6429CDF684001F055F /* DemoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C9A6329CDF684001F055F /* DemoItem.swift */; };
+		E91C9A6629CEBF07001F055F /* RedCrownedCrane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91C9A6529CEBF07001F055F /* RedCrownedCrane.framework */; };
+		E91C9A6729CEBF07001F055F /* RedCrownedCrane.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E91C9A6529CEBF07001F055F /* RedCrownedCrane.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F5C9F17E3FC7DFC3F0203697 /* Pods_RedCrownedCrane_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA711F06106E3B70254713DD /* Pods_RedCrownedCrane_Demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E91C9A6229CDF27E001F055F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91C9A6829CEBF07001F055F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E91C9A6729CEBF07001F055F /* RedCrownedCrane.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04B478D5345D3C7B6F1E4368 /* Pods-RedCrownedCrane-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedCrownedCrane-Demo.release.xcconfig"; path = "Target Support Files/Pods-RedCrownedCrane-Demo/Pods-RedCrownedCrane-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		A9105BD617B309F8F70A5813 /* Pods-RedCrownedCrane-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedCrownedCrane-Demo.debug.xcconfig"; path = "Target Support Files/Pods-RedCrownedCrane-Demo/Pods-RedCrownedCrane-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		DA711F06106E3B70254713DD /* Pods_RedCrownedCrane_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedCrownedCrane_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91C9A2F29CDEE09001F055F /* RedCrownedCrane-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RedCrownedCrane-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91C9A4229CDEF0B001F055F /* RedCrownedCrane_DemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedCrownedCrane_DemoApp.swift; sourceTree = "<group>"; };
+		E91C9A4329CDEF0B001F055F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E91C9A4529CDEF0B001F055F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E91C9A4629CDEF0B001F055F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E91C9A4F29CDF0D5001F055F /* Kingfisher-macOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kingfisher-macOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91C9A5129CDF0D5001F055F /* Kingfisher_macOS_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingfisher_macOS_DemoApp.swift; sourceTree = "<group>"; };
+		E91C9A5329CDF0D5001F055F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E91C9A5529CDF0D7001F055F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E91C9A5829CDF0D7001F055F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E91C9A5A29CDF0D7001F055F /* Kingfisher_macOS_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kingfisher_macOS_Demo.entitlements; sourceTree = "<group>"; };
+		E91C9A6329CDF684001F055F /* DemoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoItem.swift; sourceTree = "<group>"; };
+		E91C9A6529CEBF07001F055F /* RedCrownedCrane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedCrownedCrane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91C9A6929CEC219001F055F /* RedCrownedCrane-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RedCrownedCrane-Demo.entitlements"; sourceTree = "<group>"; };
+		E91C9A6A29CEC246001F055F /* RedCrownedCrane-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RedCrownedCrane-Demo-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E91C9A2C29CDEE09001F055F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C9F17E3FC7DFC3F0203697 /* Pods_RedCrownedCrane_Demo.framework in Frameworks */,
+				E91C9A6629CEBF07001F055F /* RedCrownedCrane.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91C9A4C29CDF0D5001F055F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5782B7FA331163C6980D800E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9105BD617B309F8F70A5813 /* Pods-RedCrownedCrane-Demo.debug.xcconfig */,
+				04B478D5345D3C7B6F1E4368 /* Pods-RedCrownedCrane-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		E91C9A2629CDEE09001F055F = {
+			isa = PBXGroup;
+			children = (
+				E91C9A6A29CEC246001F055F /* RedCrownedCrane-Demo-Info.plist */,
+				E91C9A6929CEC219001F055F /* RedCrownedCrane-Demo.entitlements */,
+				E91C9A4029CDEF0B001F055F /* Demo */,
+				E91C9A3029CDEE09001F055F /* Products */,
+				E91C9A5E29CDF27E001F055F /* Frameworks */,
+				5782B7FA331163C6980D800E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E91C9A3029CDEE09001F055F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E91C9A2F29CDEE09001F055F /* RedCrownedCrane-Demo.app */,
+				E91C9A4F29CDF0D5001F055F /* Kingfisher-macOS-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E91C9A4029CDEF0B001F055F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E91C9A4129CDEF0B001F055F /* RedCrownedCrane-Demo */,
+				E91C9A5029CDF0D5001F055F /* Kingfisher-macOS-Demo */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		E91C9A4129CDEF0B001F055F /* RedCrownedCrane-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E91C9A4229CDEF0B001F055F /* RedCrownedCrane_DemoApp.swift */,
+				E91C9A4329CDEF0B001F055F /* Assets.xcassets */,
+				E91C9A4429CDEF0B001F055F /* Preview Content */,
+				E91C9A4629CDEF0B001F055F /* ContentView.swift */,
+				E91C9A6329CDF684001F055F /* DemoItem.swift */,
+			);
+			path = "RedCrownedCrane-Demo";
+			sourceTree = "<group>";
+		};
+		E91C9A4429CDEF0B001F055F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E91C9A4529CDEF0B001F055F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E91C9A5029CDF0D5001F055F /* Kingfisher-macOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E91C9A5129CDF0D5001F055F /* Kingfisher_macOS_DemoApp.swift */,
+				E91C9A5329CDF0D5001F055F /* ContentView.swift */,
+				E91C9A5529CDF0D7001F055F /* Assets.xcassets */,
+				E91C9A5A29CDF0D7001F055F /* Kingfisher_macOS_Demo.entitlements */,
+				E91C9A5729CDF0D7001F055F /* Preview Content */,
+			);
+			path = "Kingfisher-macOS-Demo";
+			sourceTree = "<group>";
+		};
+		E91C9A5729CDF0D7001F055F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E91C9A5829CDF0D7001F055F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E91C9A5E29CDF27E001F055F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E91C9A6529CEBF07001F055F /* RedCrownedCrane.framework */,
+				DA711F06106E3B70254713DD /* Pods_RedCrownedCrane_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E91C9A2E29CDEE09001F055F /* RedCrownedCrane-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91C9A3D29CDEE0B001F055F /* Build configuration list for PBXNativeTarget "RedCrownedCrane-Demo" */;
+			buildPhases = (
+				FB07DDC77BAD1CCE742C3348 /* [CP] Check Pods Manifest.lock */,
+				E91C9A2B29CDEE09001F055F /* Sources */,
+				E91C9A2C29CDEE09001F055F /* Frameworks */,
+				E91C9A2D29CDEE09001F055F /* Resources */,
+				21F1310CB1A610DC87B42801 /* [CP] Embed Pods Frameworks */,
+				E91C9A6829CEBF07001F055F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RedCrownedCrane-Demo";
+			productName = "RedCrownedCrane-Demo";
+			productReference = E91C9A2F29CDEE09001F055F /* RedCrownedCrane-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E91C9A4E29CDF0D5001F055F /* Kingfisher-macOS-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91C9A5B29CDF0D7001F055F /* Build configuration list for PBXNativeTarget "Kingfisher-macOS-Demo" */;
+			buildPhases = (
+				E91C9A4B29CDF0D5001F055F /* Sources */,
+				E91C9A4C29CDF0D5001F055F /* Frameworks */,
+				E91C9A4D29CDF0D5001F055F /* Resources */,
+				E91C9A6229CDF27E001F055F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kingfisher-macOS-Demo";
+			productName = "Kingfisher-macOS-Demo";
+			productReference = E91C9A4F29CDF0D5001F055F /* Kingfisher-macOS-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E91C9A2729CDEE09001F055F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E91C9A2E29CDEE09001F055F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E91C9A4E29CDF0D5001F055F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = E91C9A2A29CDEE09001F055F /* Build configuration list for PBXProject "RedCrownedCrane-Demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E91C9A2629CDEE09001F055F;
+			productRefGroup = E91C9A3029CDEE09001F055F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E91C9A2E29CDEE09001F055F /* RedCrownedCrane-Demo */,
+				E91C9A4E29CDF0D5001F055F /* Kingfisher-macOS-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E91C9A2D29CDEE09001F055F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91C9A4929CDEF0B001F055F /* Preview Assets.xcassets in Resources */,
+				E91C9A4829CDEF0B001F055F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91C9A4D29CDF0D5001F055F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91C9A5929CDF0D7001F055F /* Preview Assets.xcassets in Resources */,
+				E91C9A5629CDF0D7001F055F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21F1310CB1A610DC87B42801 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RedCrownedCrane-Demo/Pods-RedCrownedCrane-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RedCrownedCrane-Demo/Pods-RedCrownedCrane-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RedCrownedCrane-Demo/Pods-RedCrownedCrane-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB07DDC77BAD1CCE742C3348 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RedCrownedCrane-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E91C9A2B29CDEE09001F055F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91C9A4A29CDEF0B001F055F /* ContentView.swift in Sources */,
+				E91C9A4729CDEF0B001F055F /* RedCrownedCrane_DemoApp.swift in Sources */,
+				E91C9A6429CDF684001F055F /* DemoItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91C9A4B29CDF0D5001F055F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91C9A5429CDF0D5001F055F /* ContentView.swift in Sources */,
+				E91C9A5229CDF0D5001F055F /* Kingfisher_macOS_DemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E91C9A3B29CDEE0B001F055F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E91C9A3C29CDEE0B001F055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E91C9A3E29CDEE0B001F055F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9105BD617B309F8F70A5813 /* Pods-RedCrownedCrane-Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "RedCrownedCrane-Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Demo/RedCrownedCrane-Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = D24A64J5VZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RedCrownedCrane-Demo-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.forter.RedCrownedCrane-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Debug;
+		};
+		E91C9A3F29CDEE0B001F055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B478D5345D3C7B6F1E4368 /* Pods-RedCrownedCrane-Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "RedCrownedCrane-Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Demo/RedCrownedCrane-Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = D24A64J5VZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RedCrownedCrane-Demo-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.forter.RedCrownedCrane-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Release;
+		};
+		E91C9A5C29CDF0D7001F055F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Kingfisher-macOS-Demo/Kingfisher_macOS_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kingfisher-macOS-Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = D24A64J5VZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.forter.Kingfisher-macOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E91C9A5D29CDF0D7001F055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Kingfisher-macOS-Demo/Kingfisher_macOS_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kingfisher-macOS-Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = D24A64J5VZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.forter.Kingfisher-macOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E91C9A2A29CDEE09001F055F /* Build configuration list for PBXProject "RedCrownedCrane-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91C9A3B29CDEE0B001F055F /* Debug */,
+				E91C9A3C29CDEE0B001F055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E91C9A3D29CDEE0B001F055F /* Build configuration list for PBXNativeTarget "RedCrownedCrane-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91C9A3E29CDEE0B001F055F /* Debug */,
+				E91C9A3F29CDEE0B001F055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E91C9A5B29CDF0D7001F055F /* Build configuration list for PBXNativeTarget "Kingfisher-macOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91C9A5C29CDF0D7001F055F /* Debug */,
+				E91C9A5D29CDF0D7001F055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E91C9A2729CDEE09001F055F /* Project object */;
+}

@@ -1,48 +1,32 @@
 //
-//  ViewController.swift
-//  RedCrownedCrane
+//  ContentView.swift
+//  RedCrownedCrane-Demo
 //
-//  Created by forterli on 2023/3/2.
+//  Created by forterli on 2023/3/24.
 //
 
-import UIKit
 import SwiftUI
 import GRDB
+import CloudKit
+import RedCrownedCrane
 
-class ViewController: UIHostingController<TestView>  {
-
-    override init?(coder aDecoder: NSCoder, rootView: TestView) {
-        super.init(coder: aDecoder, rootView: TestView())
-    }
-    
-    
-    @MainActor required dynamic init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder, rootView: TestView())
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-}
-
-struct TestView: View {
+struct ContentView: View {
 
     class ViewModel: ObservableObject {
-        @Published var testItems: [TestItem] = try! dbQueue.read { db in
-            let items = try TestItem.filter(Column("isDeleted") == false).fetchAll(db)
+        @Published var demoItems: [DemoItem] = try! dbQueue.read { db in
+            let items = try DemoItem.filter(Column("isDeleted") == false).fetchAll(db)
             return items
         }
         var cancellable: AnyDatabaseCancellable?
         func startObservation() {
             if cancellable == nil {
                 let observation = ValueObservation.tracking { db in
-                    try TestItem.filter(Column("isDeleted") == false).order(Column("modifiedAt").asc).fetchAll(db)
+                    try DemoItem.filter(Column("isDeleted") == false).order(Column("modifiedAt").asc).fetchAll(db)
                 }
                 cancellable = observation.start(in: dbQueue) { error in
                     // Handle error
-                } onChange: {[weak self] (ps: [TestItem]) in
-                    self?.testItems = ps
+                } onChange: {[weak self] (ps: [DemoItem]) in
+                    self?.demoItems = ps
                 }
             }
         }
@@ -57,7 +41,7 @@ struct TestView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(vm.testItems, id: \.identifiable) { p in
+                ForEach(vm.demoItems, id: \.identifiable) { p in
                     Text("name:\(p.name)")
                 }.onDelete { index in
                     self.delete(index)
@@ -76,7 +60,7 @@ struct TestView: View {
     
     
     func add() {
-        let fd = TestItem()
+        let fd = DemoItem()
         try? dbQueue.write({ db in
             return try? fd.insert(db)
         })
@@ -85,7 +69,7 @@ struct TestView: View {
     
     func delete(_ indexSet:IndexSet) {
         guard let index = indexSet.first else { return }
-        let fd = vm.testItems[index]
+        let fd = vm.demoItems[index]
         fd.isDeleted = true
         try? dbQueue.write({ db in
             return try? fd.save(db)
@@ -96,12 +80,9 @@ struct TestView: View {
     
 }
 
-struct TestView_Previews: PreviewProvider {
+
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone 8", "iPhone 14 Pro"], id: \.self) { deviceName in
-            TestView()
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-                .previewDisplayName(deviceName)
-        }
+        ContentView()
     }
 }

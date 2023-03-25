@@ -6,8 +6,6 @@
 //
 
 import CloudKit
-import UIKit
-
 
 public final class RCSynaEngine {
     
@@ -99,7 +97,7 @@ extension RCSynaEngine {
     }
     
     
-    public func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+    public func application(didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
         if let dict = userInfo as? [String: NSObject], let notification = CKNotification(fromRemoteNotificationDictionary: dict), let subscriptionID = notification.subscriptionID, RedCrownedCraneSubscription.allIDs.contains(subscriptionID) {
             NotificationCenter.default.post(name: Notifications.cloudKitDataDidChangeRemotely.name, object: nil, userInfo: userInfo)
         }

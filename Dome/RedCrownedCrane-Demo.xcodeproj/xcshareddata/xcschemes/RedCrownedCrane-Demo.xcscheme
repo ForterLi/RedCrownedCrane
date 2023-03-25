@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E9DE554529B03F1800C35E0E"
-               BuildableName = "RedCrownedCraneExample.app"
-               BlueprintName = "RedCrownedCraneExample"
-               ReferencedContainer = "container:RedCrownedCraneExample.xcodeproj">
+               BlueprintIdentifier = "E91C99FA29CDE7FD001F055F"
+               BuildableName = "RedCrownedCrane.framework"
+               BlueprintName = "RedCrownedCrane"
+               ReferencedContainer = "container:../RedCrownedCrane.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E91C9A2E29CDEE09001F055F"
+               BuildableName = "RedCrownedCrane-Demo.app"
+               BlueprintName = "RedCrownedCrane-Demo"
+               ReferencedContainer = "container:RedCrownedCrane-Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +58,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E9DE554529B03F1800C35E0E"
-            BuildableName = "RedCrownedCraneExample.app"
-            BlueprintName = "RedCrownedCraneExample"
-            ReferencedContainer = "container:RedCrownedCraneExample.xcodeproj">
+            BlueprintIdentifier = "E91C9A2E29CDEE09001F055F"
+            BuildableName = "RedCrownedCrane-Demo.app"
+            BlueprintName = "RedCrownedCrane-Demo"
+            ReferencedContainer = "container:RedCrownedCrane-Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E9DE554529B03F1800C35E0E"
-            BuildableName = "RedCrownedCraneExample.app"
-            BlueprintName = "RedCrownedCraneExample"
-            ReferencedContainer = "container:RedCrownedCraneExample.xcodeproj">
+            BlueprintIdentifier = "E91C9A2E29CDEE09001F055F"
+            BuildableName = "RedCrownedCrane-Demo.app"
+            BlueprintName = "RedCrownedCrane-Demo"
+            ReferencedContainer = "container:RedCrownedCrane-Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

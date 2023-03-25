@@ -35,7 +35,7 @@ final class RCPrivateDatabaseManager: RCDatabaseManager {
         }
         
         
-        if #available(iOS 15.0, *) {
+        if #available(iOS 15.0,tvOS 15.0,macOS 12.0,watchOS 8.0, *) {
             changesOperation.fetchDatabaseChangesResultBlock = {
                 switch $0 {
                 case .success((let newToken, _)):
